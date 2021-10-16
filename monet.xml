@@ -5,6 +5,10 @@
     <remote name="vendor"
             fetch="https://gitlab.com/"
             revision="master" />
+            
+    <remote name="proton"
+    fetch="https://github.com/"
+    revision="master" />
 	
     <remote name="device"
             fetch="https://github.com"
@@ -32,4 +36,6 @@
     <project path="vendor/xiaomi/" name="mikairyuu/android-vendor-xiaomi-sm7250" remote="vendor" />
     
     <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="common" />
+    
+    <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="proton" />
 </manifest>
