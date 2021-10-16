@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+    <remote name="vendor"
+            fetch="https://gitlab.com/"
+            revision="master" />
+	
+    <remote name="device"
+            fetch="https://github.com"
+            revision="evox"/>
+
+    <remote name="kernel"
+            fetch="https://github.com"
+            revision="skizo"/>
+            
+    <remote name="common"
+            fetch="https://github.com"
+            revision="evox"/>
+            
+
+    <!--Device Trees-->
+    <project path="device/xiaomi/monet" name="mikairyuu/android_device_xiaomi_monet-oss" remote="device" />
+    
+
+    <!--Kernel-->
+    <project path="kernel/xiaomi/sm7250" name="mikairyuu/kernel_xiaomi_sm7250" remote="kernel" />
+
+
+
+    <!-- Vendor folders -->
+    <project path="vendor/xiaomi/" name="mikairyuu/android-vendor-xiaomi-sm7250" remote="vendor" />
+    
+    <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="common" />
+</manifest>
