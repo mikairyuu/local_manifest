@@ -4,7 +4,7 @@
 
     <remote name="vendor"
             fetch="https://gitlab.com/"
-            revision="Monet" />
+            revision="snow" />
 	
     <remote name="snow"
             fetch="https://github.com"
@@ -29,7 +29,7 @@
 
 
     <!-- Vendor folders -->
-    <project path="vendor/xiaomi/" name="xSylla/android-vendor-xiaomi-sm7250" remote="vendor" />
+    <project path="vendor/xiaomi/" name="mikairyuu/android-vendor-xiaomi-sm7250" remote="vendor" />
     
     <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="snow" />
 	
