@@ -13,6 +13,10 @@
     <remote name="kernel"
             fetch="https://github.com"
             revision="pe12"/>
+	
+    <remote name="sm8250"
+            fetch="https://github.com"
+            revision="lineage-19.0"/>
             
 
     <!--Device Trees-->
@@ -28,6 +32,8 @@
     <project path="vendor/xiaomi/" name="xSylla/android-vendor-xiaomi-sm7250" remote="vendor" />
     
     <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="snow" />
+	
+    <project path="hardware/xiaomi" name="xiaomi-sm8250-devs/android_hardware_xiaomi" remote="sm8250" />
 	
     <!-- Fixes -->
 	<remove-project name="frameworks_native" />
