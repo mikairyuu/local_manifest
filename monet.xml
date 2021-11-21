@@ -4,38 +4,34 @@
 
     <remote name="vendor"
             fetch="https://gitlab.com/"
-            revision="master" />
-            
-    <remote name="proton"
-    fetch="https://github.com/"
-    revision="master" />
+            revision="Monet" />
 	
-    <remote name="device"
+    <remote name="snow"
             fetch="https://github.com"
-            revision="evox"/>
+            revision="snow"/>
 
     <remote name="kernel"
             fetch="https://github.com"
-            revision="skizo"/>
-            
-    <remote name="common"
-            fetch="https://github.com"
-            revision="evox"/>
+            revision="pe12"/>
             
 
     <!--Device Trees-->
-    <project path="device/xiaomi/monet" name="mikairyuu/android_device_xiaomi_monet-oss" remote="device" />
+    <project path="device/xiaomi/monet" name="mikairyuu/android_device_xiaomi_monet-oss" remote="snow" />
     
 
     <!--Kernel-->
-    <project path="kernel/xiaomi/sm7250" name="mikairyuu/kernel_xiaomi_sm7250" remote="kernel" />
+    <project path="kernel/xiaomi/sm7250" name="maluueu/android_kernel_xiaomi_sm7250" remote="kernel" />
 
 
 
     <!-- Vendor folders -->
-    <project path="vendor/xiaomi/" name="mikairyuu/android-vendor-xiaomi-sm7250" remote="vendor" />
+    <project path="vendor/xiaomi/" name="xSylla/android-vendor-xiaomi-sm7250" remote="vendor" />
     
-    <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="common" />
-    
-    <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="proton" />
+    <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="snow" />
+	
+    <!-- Fixes -->
+	<remove-project name="frameworks_native" />
+	<project path="frameworks/native" name="mikairyuu/frameworks_native" remote="snow" />
+	
+	
 </manifest>
