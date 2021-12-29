@@ -12,11 +12,7 @@
 
     <remote name="kernel"
             fetch="https://github.com"
-            revision="pe12"/>
-	
-    <remote name="sm8250"
-            fetch="https://github.com"
-            revision="lineage-19.0"/>
+            revision="twelve"/>
             
 
     <!--Device Trees-->
@@ -24,7 +20,7 @@
     
 
     <!--Kernel-->
-    <project path="kernel/xiaomi/sm7250" name="maluueu/android_kernel_xiaomi_sm7250" remote="kernel" />
+    <project path="kernel/xiaomi/sm7250" name="maluueu-android-development/android_kernel_xiaomi_sm7250" remote="kernel" />
 
 
 
@@ -32,12 +28,4 @@
     <project path="vendor/xiaomi/" name="mikairyuu/android-vendor-xiaomi-sm7250" remote="vendor" />
     
     <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="snow" />
-	
-    <project path="hardware/xiaomi" name="xiaomi-sm8250-devs/android_hardware_xiaomi" remote="sm8250" />
-	
-    <!-- Fixes -->
-	<remove-project name="frameworks_native" />
-	<project path="frameworks/native" name="mikairyuu/frameworks_native" remote="snow" />
-	
-	
 </manifest>
