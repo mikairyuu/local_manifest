@@ -5,6 +5,10 @@
     <remote name="vendor"
             fetch="https://gitlab.com/"
             revision="snow" />
+
+    <remote name="proton"
+            fetch="https://github.com/"
+            revision="master" />
 	
     <remote name="snow"
             fetch="https://github.com"
@@ -12,7 +16,7 @@
 
     <remote name="kernel"
             fetch="https://github.com"
-            revision="twelve"/>
+            revision="神速"/>
             
 
     <!--Device Trees-->
@@ -20,12 +24,12 @@
     
 
     <!--Kernel-->
-    <project path="kernel/xiaomi/sm7250" name="maluueu-android-development/android_kernel_xiaomi_sm7250" remote="kernel" />
+    <project path="kernel/xiaomi/sm7250" name="mikairyuu/kernel_xiaomi_sm7250" remote="kernel" />
 
 
 
     <!-- Vendor folders -->
     <project path="vendor/xiaomi/" name="mikairyuu/android-vendor-xiaomi-sm7250" remote="vendor" />
     
-    <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="snow" />
+    <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="proton" clone-depth="1"/>
 </manifest>
