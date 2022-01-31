@@ -13,6 +13,9 @@
     <remote name="snow"
             fetch="https://github.com"
             revision="snow"/>
+    <remote name="snow-wip"
+            fetch="https://github.com"
+            revision="snow-wip"/>
 
     <remote name="kernel"
             fetch="https://github.com"
@@ -21,7 +24,7 @@
 
     <!--Device Trees-->
     <project path="device/xiaomi/monet" name="mikairyuu/android_device_xiaomi_monet-oss" remote="snow" />
-    <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="snow" />
+    <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="snow-wip" />
 
     <!--Kernel-->
     <project path="kernel/xiaomi/sm7250" name="mikairyuu/kernel_xiaomi_sm7250" remote="kernel" />
