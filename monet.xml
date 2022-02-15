@@ -10,7 +10,7 @@
             fetch="https://github.com"
             revision="main" />
 	
-    <remote name="radiant"
+    <remote name="monet_radiant"
             fetch="https://github.com"
             revision="radiant"/>
 
@@ -20,8 +20,8 @@
             
 
     <!--Device Trees-->
-    <project path="device/xiaomi/monet" name="mikairyuu/android_device_xiaomi_monet-oss" remote="radiant" />
-    <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="radiant" />
+    <project path="device/xiaomi/monet" name="mikairyuu/android_device_xiaomi_monet-oss" remote="monet_radiant" />
+    <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="monet_radiant" />
 
     <!--Kernel-->
     <project path="kernel/xiaomi/sm7250" name="mikairyuu/kernel_xiaomi_sm7250" remote="kernel" />
