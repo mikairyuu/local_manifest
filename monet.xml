@@ -12,7 +12,7 @@
 	
     <remote name="snow"
             fetch="https://github.com"
-            revision="snow"/>
+            revision="awaken"/>
 
     <remote name="kernel"
             fetch="https://github.com"
