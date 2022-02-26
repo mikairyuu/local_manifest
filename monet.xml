@@ -21,6 +21,14 @@
     <remote name="los"
             fetch="https://github.com"
             revision="lineage-19.0"/>
+	
+   <remote name="los-caf-8250"
+            fetch="https://github.com"
+            revision="lineage-19.0-caf-sm8250"/>
+	
+	
+   <remove-project name="LineageOS/android_hardware_qcom_audio" />
+   <remove-project name="LineageOS/android_hardware_qcom_display" />
             
 
     <!--Device Trees-->
@@ -31,6 +39,9 @@
     <project path="kernel/xiaomi/sm7250" name="mikairyuu/kernel_xiaomi_sm7250" remote="kernel" />
 
     <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="los" />
+	
+    <project path="hardware/qcom-caf/sm8250/audio" name="LineageOS/android_hardware_qcom_audio" remote="los-caf-8250" />
+    <project path="hardware/qcom-caf/sm8250/display" name="LineageOS/android_hardware_qcom_display" remote="los-caf-8250" />
 
 
 
