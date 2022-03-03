@@ -7,7 +7,7 @@
             revision="snow" />
 
     <remote name="toolchain"
-            fetch="https://gitlab.com/"
+            fetch="https://github.com"
             revision="main" />
 	
     <remote name="snow"
@@ -31,5 +31,5 @@
     <!-- Vendor folders -->
     <project path="vendor/xiaomi/" name="mikairyuu/android-vendor-xiaomi-sm7250" remote="vendor" />
     
-    <project path="prebuilts/clang/host/linux-x86/clang-azure" name="Panchajanya1999/azure-clang" remote="toolchain" clone-depth="1"/>
+    <project path="prebuilts/clang/host/linux-x86/clang-lolz" name="Jprimero15/lolz-clang" remote="toolchain" clone-depth="1"/>
 </manifest>
