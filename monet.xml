@@ -8,14 +8,14 @@
 	
     <remote name="github"
            fetch="https://github.com" />
-
-    <remote name="toolchain"
-            fetch="https://github.com"
-            revision="main" />
 	
     <remote name="snow"
             fetch="https://github.com"
             revision="snow"/>
+
+    <remote name="vangogh"
+            fetch="https://github.com"
+            revision="vangogh"/>
 
     <remote name="kernel"
             fetch="https://github.com"
@@ -23,18 +23,15 @@
             
 
     <!--Device Trees-->
-    <project path="device/xiaomi/monet" name="mikairyuu/android_device_xiaomi_monet-oss" remote="snow" />
-    <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="snow" />
+    <project path="device/xiaomi/vangogh" name="mikairyuu/android_device_xiaomi_vangogh" remote="snow" />
+    <project path="device/xiaomi/sm7250-common" name="mikairyuu/android_device_xiaomi_sm7250-common" remote="vangogh" />
 
     <!--Kernel-->
-    <project path="kernel/xiaomi/sm7250" name="mikairyuu/kernel_xiaomi_sm7250" remote="kernel" />
-
-
+    <project path="kernel/xiaomi/sm7250" name="PixelExperience-Devices/kernel_xiaomi_vangogh" revision="twelve" remote="github" />
 
     <!-- Vendor folders -->
     <project path="vendor/xiaomi/" name="mikairyuu/android-vendor-xiaomi-sm7250" remote="vendor" />
     
-    <project path="prebuilts/clang/host/linux-x86/clang-lolz" name="Jprimero15/lolz-clang" remote="toolchain" clone-depth="1"/>
     <remove-project name="LineageOS/android_hardware_qcom_display" />
     <project path="hardware/qcom-caf/sm8250/display" name="PixelExperience/hardware_qcom-caf_sm8250_display" revision="twelve" remote="github" />
 </manifest>
