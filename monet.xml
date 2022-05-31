@@ -36,5 +36,7 @@
     
     <project path="prebuilts/clang/host/linux-x86/clang-lolz" name="Jprimero15/lolz-clang" remote="toolchain" clone-depth="1"/>
     <remove-project name="LineageOS/android_hardware_qcom_display" />
+    <remove-project name="LineageOS/android_hardware_qcom_audio" />
     <project path="hardware/qcom-caf/sm8250/display" name="PixelExperience/hardware_qcom-caf_sm8250_display" revision="twelve" remote="github" />
+    <project path="hardware/qcom-caf/sm8250/audio" name="mikairyuu/hardware_qcom_audio" revision="12" remote="github" />
 </manifest>
