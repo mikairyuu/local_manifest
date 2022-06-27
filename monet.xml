@@ -31,7 +31,4 @@
 
     <!-- Vendor folders -->
     <project path="vendor/xiaomi/" name="mikairyuu/android-vendor-xiaomi-sm7250" remote="vendor" />
-    
-    <remove-project name="LineageOS/android_hardware_qcom_display" />
-    <project path="hardware/qcom-caf/sm8250/display" name="PixelExperience/hardware_qcom-caf_sm8250_display" revision="twelve" remote="github" />
 </manifest>
